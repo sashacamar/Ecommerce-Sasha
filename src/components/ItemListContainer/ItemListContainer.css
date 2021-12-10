@@ -1,0 +1,41 @@
+.contenedor-imagenes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+
+    margin: 30px 100px;
+
+    margin-top: 50px;
+}
+
+.contenedor-producto {
+    width: 200px;
+    height: 300px;
+    background-position: center;
+    background-size: 300px;
+
+    
+    margin: 30px;
+
+}
+
+.a {
+    background-image: url("https://i2.wp.com/artefeed.com/wp-content/uploads/2018/03/L%C3%ADneas-Dibujos-minimalistas-de-Victor-Rigo-1.jpg?fit=900%2C900&ssl=1");
+}
+
+.b {
+    background-image: url("https://i1.wp.com/artefeed.com/wp-content/uploads/2018/03/L%C3%ADneas-Dibujos-minimalistas-de-Victor-Rigo-3.jpg?resize=900%2C900&ssl=1");
+}
+
+.c {
+    background-image: url("https://i1.wp.com/artefeed.com/wp-content/uploads/2018/03/L%C3%ADneas-Dibujos-minimalistas-de-Victor-Rigo-5.jpg?resize=900%2C900&ssl=1");
+}
+
+
+p{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+}
