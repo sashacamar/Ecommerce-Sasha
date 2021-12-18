@@ -31,8 +31,9 @@
 
 
 .ul-NavBar li a {
+    font-family: "montserrat", sans-serif;
     font-size: 13px;
-    letter-spacing: 2px;
+    letter-spacing: 1px;
     padding: 10px;
 
     cursor: pointer;
