@@ -22,29 +22,34 @@
 
 }
 
-.ul-NavBar li {
+.li-NavBar {
     text-transform: uppercase;
     display: inline-flex;
 
-    padding-left: 25px;
+    padding: 0px 13px;
 }
 
 
-.ul-NavBar li a {
+.a-NavBar {
     font-family: "montserrat", sans-serif;
     font-size: 13px;
     letter-spacing: 1px;
     padding: 10px;
+    text-decoration: none;
+    color: black;
+    border: solid 1px white;
 
     cursor: pointer;
 }
 
-.borde {
+.activeClass {
     border-top: 1px solid #2c3e50;
     border-bottom: 1px solid #2c3e50;
 
 }
 
-.ul-NavBar li a:hover {
+.a-NavBar:hover {
     color: grey;
+    border-top: 1px solid #2c3e50;
+    border-bottom: 1px solid #2c3e50;
 }

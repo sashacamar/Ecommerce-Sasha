@@ -8,6 +8,10 @@
     margin-top: 50px;
 }
 
+.contenedor-imagenes a {
+    text-decoration: none;
+}
+
 .contenedor {
     display: flex;
     flex-wrap: wrap;

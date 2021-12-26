@@ -2,7 +2,7 @@ import './CartWidget.css';
 
 import Carrito from './carrito_icon.png'
 
-import react from 'react';
+import React from 'react';
 
 export const CartWidget = () => {
     return (
