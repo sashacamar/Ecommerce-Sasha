@@ -1,13 +1,18 @@
 import './ItemListContainer.css';
 
-import React, {useState, useEffect} from "react";
+import React, {useState, useEffect, useContext} from "react";
 
-import { data } from "../../data/data"
+import { CartContext } from '../../Context/CartContext';
 import { ItemList } from './Items/ItemList';
 
 import { useParams } from 'react-router-dom';
 
 export const ItemListContainer = ({textFinal}) => {
+    //console.log(useContext(CartContext)['dataList']['data']);
+    const data = useContext(CartContext)['dataList']['data'];
+    //const addProducto = useContext(CartContext)['data'];
+
+
     const [productos, setProductos] = useState([]);
     const [loading, setLoading] = useState(true);
     
@@ -48,5 +53,5 @@ export const ItemListContainer = ({textFinal}) => {
 
         </>
         )
-    )
-}
+    );
+};

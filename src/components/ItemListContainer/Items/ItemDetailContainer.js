@@ -1,11 +1,17 @@
 import "./ItemDetailsContainer.css";
-import React, { useState, useEffect} from "react";
+import React, { useState, useEffect, useContext } from "react";
 import { ItemDetail } from './ItemDetail';
-import { data } from "../../../data/data";
+import { CartContext } from "../../../Context/CartContext";
 import { useParams } from "react-router-dom"
 
 
 export const ItemDetailContainer = () => {
+
+    const data = useContext(CartContext)['dataList']['data'];
+    const addProducto = useContext(CartContext)['dataList']['data'];
+
+    console.log();
+
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
     

@@ -1,12 +1,15 @@
 import { NavBar } from './components/NavBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemListContainer/Items/ItemDetailContainer';
+import { CartProvider } from './Context/CartContext';
 
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
 
 const App = () => (
+  
     <div className="app">
+      <CartProvider>
       <BrowserRouter>
         <NavBar/>
         <Switch>
@@ -22,6 +25,14 @@ const App = () => (
             <ItemDetailContainer/>
           </Route>
 
+          <Route exact path="/contacto">
+            <h1>hola</h1>
+          </Route>
+
+          <Route exact path="/cart">
+            <h1>estas en el carrito de compras</h1>
+          </Route>
+
           <Route path="*">
             <Redirect to="/"/>
           </Route>
@@ -29,8 +40,10 @@ const App = () => (
         </Switch>
           
       </BrowserRouter>
+      </CartProvider>
 
     </div>
+    
   );
 
 export default App;

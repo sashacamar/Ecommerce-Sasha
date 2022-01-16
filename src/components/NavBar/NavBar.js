@@ -22,6 +22,7 @@ export const NavBar = () => {
             <div className="contenedor-header">
                 <img className="logo-img" src={Logo} alt="logo"></img>
                 <CartWidget />
+                
             </div>
             <nav>
             <ul className="ul-NavBar">

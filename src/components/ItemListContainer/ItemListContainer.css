@@ -20,7 +20,7 @@
 
 .contenedor-producto {
     width: 200px;
-    height: 300px;
+    height: 360px;
     overflow: hidden;
     display: flex;
     flex-direction: column;
@@ -54,6 +54,15 @@
 
 }
 
+.contenedor-producto h5 {
+    text-transform: uppercase;
+    font-family: "montserrat", sans-serif;
+    color: grey;
+    margin: 0;
+    margin-top: 20px;
+
+}
+
 
 p{
     display: flex;
@@ -63,4 +72,22 @@ p{
     text-align: center;
 
     font-family: "montserrat", sans-serif;
+}
+
+.list-button-ver {
+    cursor: pointer;
+
+    width: 200px;
+    margin-top: 10px;
+    padding: 11px;
+
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 11px;
+    background-color: rgb(24, 24, 24);
+    border: none;
+
 }

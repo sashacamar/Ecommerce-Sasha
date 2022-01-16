@@ -1,11 +1,14 @@
-.contenedor-carrito {
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
+.contenedor-carrito-a {
     width: 100%;
     margin-right: 200px;
 
     position: absolute;
+}
+
+.contenedor-carrito {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
 }
 
 .carrito-img {
