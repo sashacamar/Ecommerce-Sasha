@@ -61,3 +61,16 @@
     border: none;
 
 }
+
+.button-terminar-compra {
+    cursor: pointer;
+    background-color: black;
+    border: none;
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    color: white;
+    font-weight: 600;
+    letter-spacing: 2px;
+    font-size: 11px;
+
+}

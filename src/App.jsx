@@ -2,6 +2,7 @@ import { NavBar } from './components/NavBar/NavBar';
 import { ItemListContainer } from './components/ItemListContainer/ItemListContainer';
 import { ItemDetailContainer } from './components/ItemListContainer/Items/ItemDetailContainer';
 import { CartProvider } from './Context/CartContext';
+import { Cart } from './components/Cart/Cart';
 
 import React from 'react';
 import { BrowserRouter, Switch, Route, Redirect} from 'react-router-dom';
@@ -30,7 +31,7 @@ const App = () => (
           </Route>
 
           <Route exact path="/cart">
-            <h1>estas en el carrito de compras</h1>
+            <Cart></Cart>
           </Route>
 
           <Route path="*">

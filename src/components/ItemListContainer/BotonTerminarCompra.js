@@ -1,7 +1,9 @@
 import react from "react";
+import { Link } from "react-router-dom";
+
 
 export const BotonTerminarCompra = ({amount}) => {
-    console.log(amount);
+    //console.log(amount);
     let botonText;
     const agregarBoton = () => {
         if (amount > 0) {
@@ -14,6 +16,8 @@ export const BotonTerminarCompra = ({amount}) => {
     agregarBoton();
 
     return (
-        <button className="button-comprar" >{`${botonText}`}</button>
+        <Link className="button-comprar" to={`/cart`}>
+            <button className="button-terminar-compra" >{`${botonText}`}</button>
+        </Link>
     )
 }

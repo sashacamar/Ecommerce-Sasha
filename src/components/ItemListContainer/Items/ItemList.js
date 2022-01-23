@@ -7,14 +7,15 @@ export const ItemList = ({items}) => {
 
     return (
         <>
-            {items?.map((item) => {
+            {items?.map((item, index) => {
                 return(
                 <>
                     <Item 
+                    key={index}
                     id={item.id} 
                     img={item.img} 
                     title={item.title} 
-                    price={item.price}
+                    price={`$${item.price}`}
                     amount={item.amount}
                     />
                 </>       

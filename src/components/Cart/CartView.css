@@ -1,0 +1,142 @@
+.contenedor-carrito-lista{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+    margin-top: 50px;
+}
+
+.carrito-lista {
+    background-color: rgb(185, 148, 148);
+    
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 700px;
+
+    color: white;
+    text-align: center;
+
+    margin-bottom: 10px;
+}
+
+.carrito-lista a {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.carrito-lista h3 {
+    margin: auto;
+    font-weight: 400;
+    font-family: "montserrat", sans-serif;
+    letter-spacing: 1px;
+
+
+}
+
+.img-product-conteiner {
+    width: 90px;
+    height: 90px;
+    border: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0;
+    margin-right: 20px;
+    padding: 3px;
+}
+
+.img-product {
+    cursor: pointer;
+    width: 90px;
+}
+
+.plus, .less {
+    cursor: pointer;
+    width: 30px;
+}
+
+.less {
+    margin-left: -20px;
+}
+
+.plus {
+    margin-right: -20px;
+}
+
+
+.barra-indice {
+    background-color: rgb(255, 227, 227);
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 700px;
+
+    color: black;
+    text-align: center;
+    font-family: "montserrat", sans-serif;
+    letter-spacing: 2px;
+
+
+    margin-bottom: 30px;
+}
+
+.barra-indice ul {
+    text-transform: uppercase;
+
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 80px;
+}
+
+.barra-indice ul li {
+    display: flex;
+    
+    margin-left: 50px;
+    font-size: 12px;
+    font-weight: 800;
+}
+
+
+.barra-total {
+    background-color: rgb(255, 227, 227);
+    
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    width: 700px;
+
+    color: black;
+    text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 150px;   
+}
+
+.barra-total h3 {
+    margin-right: 30px;
+
+    font-family: "montserrat", sans-serif;
+    letter-spacing: 1px;
+    font-weight: 900;
+    font-size: 20px;
+    color: tomato;
+    
+}
+
+.barra-total h2 {
+    margin-right: 30px;
+
+    font-family: "montserrat", sans-serif;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+    
+}

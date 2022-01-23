@@ -7,10 +7,7 @@ import { useParams } from "react-router-dom"
 
 export const ItemDetailContainer = () => {
 
-    const data = useContext(CartContext)['dataList']['data'];
-    const addProducto = useContext(CartContext)['dataList']['data'];
-
-    console.log();
+    const data = useContext(CartContext)['dataList'];
 
     const [product, setProduct] = useState({});
     const [loading, setLoading] = useState(true);
@@ -21,10 +18,10 @@ export const ItemDetailContainer = () => {
         setLoading(true);
         const getItems = new Promise ( (resolve) => {
             setTimeout ( () => {
-                const myData = data.find ( item => item.id === itemId)
+                const myData = data?.find ( item => item.id === itemId)
         
                 resolve(myData);         
-            }, 1000);
+            }, 100);
         });
 
         getItems
@@ -32,7 +29,7 @@ export const ItemDetailContainer = () => {
                 setProduct(res);
             })
             .finally( () => setLoading(false));
-    }, [itemId]);
+    }, [itemId, data]);
 
     
     return (
